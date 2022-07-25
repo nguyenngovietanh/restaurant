@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../assets/css/style.css">
+	<script src="https://kit.fontawesome.com/e8079f8f5d.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="../../assets/images/logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<title>Responsive restaurant</title>
+</head>
+
+<body>
+	<!-- Header Section start -->
+	<header>
+		<a href="#" class="logo">FOODAHOLIC</a>
+		<div id="toggle" class="fas fa-bars"></div>
+		<nav id="navbar">
+			<ul id="list">
+				<li><button><a href="#home">Home</a></button></li>
+				<li><button><a href="#menu">Menu</a></button></li>
+				<li><button><a href="#about-us">About Us</a></button></li>
+				<li><button><a href="#contact">Contact</a></button></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header Section end -->
+
+	<!-- Home Section start -->
+	<section class="home" id="home">
+		<div class="content">
+			<h3>Foodaholic Fast Food</h3>
+			<p>Lorem ipsum is placeholder text commonly used in the graphic,
+				print, and publishing industries for previewing layouts and visual mockups.</p>
+			<a href="#menu" class="btn">Order now</a>
+		</div>
+		<div class="image">
+			<img src="../../assets/images/fastfood.png" alt="">
+		</div>
+		<div class="scroll" id="scroll">
+			<div class="social-media facebook">
+				<a href="https://www.facebook.com/" target="_blank">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em"
+						width="1em" xmlns="http://www.w3.org/2000/svg">
+						<path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 
+                                32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-32 736H663.9V602.2h104l15.6-120.7H663.9v-77.1c0-35 
+                                9.7-58.8 59.8-58.8h63.9v-108c-11.1-1.5-49-4.8-93.2-4.8-92.2 0-155.3 56.3-155.3 
+                                159.6v89H434.9v120.7h104.3V848H176V176h672v672z">
+						</path>
+					</svg>
+				</a>
+			</div>
+			<div class="social-media instagram">
+				<a href="https://www.instagram.com/" target="_blank">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em"
+						width="1em" xmlns="http://www.w3.org/2000/svg">
+						<path d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 
+                                717.1 512 625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 
+                                512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 
+                                21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9zM911.8 
+                                512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 
+                                0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 
+                                109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 
+                                3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 
+                                3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 
+                                840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 
+                                570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 
+                                184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 
+                                58.3 4.7 183.2-16.2 235.8z">
+						</path>
+					</svg>
+				</a>
+			</div>
+			<div class="social-media twitter">
+				<a href="https://www.twitter.com/" target="_blank">
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
+						width="1em" xmlns="http://www.w3.org/2000/svg">
+						<g>
+							<path fill="none" d="M0 0h24v24H0z">
+							</path>
+							<path fill-rule="nonzero" d="M15.3 5.55a2.9 2.9 0 0 0-2.9 2.847l-.028 1.575a.6.6 0 0 
+                                1-.68.583l-1.561-.212c-2.054-.28-4.022-1.226-5.91-2.799-.598 3.31.57 5.603 3.383 7.372l1.747 
+                                1.098a.6.6 0 0 1 .034.993L7.793 18.17c.947.059 1.846.017 2.592-.131 4.718-.942 7.855-4.492 
+                                7.855-10.348 0-.478-1.012-2.141-2.94-2.141zm-4.9 2.81a4.9 4.9 0 0 1 8.385-3.355c.711-.005 
+                                1.316.175 2.669-.645-.335 1.64-.5 2.352-1.214 3.331 0 7.642-4.697 11.358-9.463 
+                                12.309-3.268.652-8.02-.419-9.382-1.841.694-.054 3.514-.357 5.144-1.55C5.16 15.7-.329 
+                                12.47 3.278 3.786c1.693 1.977 3.41 3.323 5.15 4.037 1.158.475 1.442.465 1.973.538z">
+							</path>
+						</g>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- Home Section end -->
+
+	<!-- Speciality Section -->
+	<section class="speciality" id="menu">
+		<h2 class="heading">Our <span>Speciality</span></h2>
+		<div class="box-container">
+			<div class="box">
+				<div class="box__content">
+					<img class="box__content--image" src="../../assets/images/food1.png" alt="">
+					<div class="box__content--overlay">
+						<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+							height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M395.938 20.78c-2.006-.015-4.02.047-6.063.19-20.603 1.434-43.834 11.255-68.156 33.374 4.478 1.835 8.86 
+                                4.388 13.092 7.718 34.186 26.906 13.31 54.375-13.156 48.094 35.578 39.36.977 69.643-36.97 49.625 9.69 25.352-20.15 
+                                40.428-47.155 17.845-19.576 41.963-23.738 70.97-24.53 95.094-.367 11.177 1.214 16.963 2.438 19.186 1.223 2.223 1.6 2.25 
+                                4.312 2.97 2.712.717 7.356.912 13 2.937 4.195 1.504 8.805 4.67 12.25 9.375 38.097 2.08 94.528 3.21 171.78-36.72 
+                                44.882-23.197 67.256-59.045 74.25-96.937 6.997-37.89-2.012-77.89-21.124-107.218-17.917-27.495-43.88-45.288-73.97-45.53zm64.187 
+                                69.44c25.656 51.76 6.995 94.552-63.844 126.218 35.36-38.065 64.82-79.05 63.845-126.22zm11.47 99C433.257 241.533 370.29 291.44 281 
+                                289.124c65.092-22.673 133.782-58.816 190.594-99.906zM200.06 302.562c-43.083 40.035-103.853 84.81-128.687 94.062-25.69 
+                                9.57-34.904.96-49.156 18.313-13.558 16.133 12.31 53.08 41.28 32.78-26.414 41.35 26.314 74.03 42.375 16.063 12.69-47.362 76.407-102.028 
+                                125.313-143.155l-.313-.688c-1.52-3.575-2.215-3.734-4.438-4.53-2.222-.798-6.236-1.084-11.468-2.47-4.804-1.27-10.963-4.467-14.907-10.375z">
+							</path>
+						</svg>
+						<h3>Chicken</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box__content">
+					<img class="box__content--image" src="../../assets/images/food2.png" alt="">
+					<div class="box__content--overlay">
+						<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+							height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M158.87.15c-16.16-1.52-31.2 8.42-35.33 24.12l-14.81 56.27c187.62 5.49 314.54 130.61 322.48 
+                                317l56.94-15.78c15.72-4.36 25.49-19.68 23.62-35.9C490.89 165.08 340.78 17.32 158.87.15zm-58.47 112L.55 
+                                491.64a16.21 16.21 0 0 0 20 19.75l379-105.1c-4.27-174.89-123.08-292.14-299.15-294.1zM128 416a32 32 0 1 
+                                1 32-32 32 32 0 0 1-32 32zm48-152a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm104 104a32 32 0 1 1 32-32 32 32 0 0 1-32 32z">
+							</path>
+						</svg>
+						<h3>Pizza</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box__content">
+					<img class="box__content--image" src="../../assets/images/food3.png" alt="">
+					<div class="box__content--overlay">
+						<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+							height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M287.9 76.19v.01h-1.1c-1.9.1-5.4 1.68-9.3 5.36-3.9 3.69-8 9.05-11.5 14.52C258.9 107 254.2 118 254.2 118l-5.1 
+                                12-9.4-9s-11-10.5-24.4-19.6c-6.7-4.46-14-8.5-20.2-10.59-6.2-2.09-10.7-1.98-13.1-.75-5.2 2.67-9.7 9.27-12.8 19.24-3.1 
+                                10.1-4.6 22.8-5 35.1-.8 24.7 2.4 47.6 2.4 47.6l2.3 15.9-14.8-6.3s-9.7-4.2-20.4-6.8c-5.4-1.2-11-2-15-1.9-4.1.2-5.9 1.2-6.4 
+                                1.8-2.7 3.3-3.9 9.4-2.6 17.9 1.2 8.6 4.8 18.9 9.1 28.5 8.6 19.3 19.8 36 19.8 36l9.8 14.5-17.6-.5c.1 0-10.1-.3-21.7 1.1-11.57 
+                                1.4-23.95 5.8-26.76 9-10.59 12.2-14.01 26.1-13.15 41.2.87 15.2 6.38 31.4 13.83 45.9s16.81 27.3 24.58 35.8c.7.7 1.3 1.4 2 2 
+                                16-9.9 25.7-25.6 33.2-46.2 9.2-25.6 14-58 21.3-91.1 7.3-33.2 17.1-67.3 37.7-96.3 20.7-29.1 52.3-52.6 100.7-64 13.7-3.2 26.7-4.7 
+                                38.9-4.8-3-4.5-6.5-9.3-10.5-14.4-7.1-9.1-15.2-17.93-23.1-24.09-7.4-5.78-14.5-8.87-19.9-9.02zM148.6 118.7c-22 4.2-47.7 28.3-69.23 
+                                63.3-21.89 35.5-39.78 81.1-48.85 123.9-9.08 42.7-8.81 82.7 2.39 105.7 5.6 11.5 13.22 18.8 24.37 22.2 8.66 2.7 19.98 2.9 
+                                34.36-.7-8.29-9.6-17.18-22.1-24.61-36.6-8.26-16.1-14.72-34.3-15.79-53-1.06-18.7 3.64-38.1 17.53-54.1 9.68-11.2 25.08-13.4 
+                                38.13-15 3.3-.4 5.6-.5 8.5-.6-4-6.9-8.7-15.6-13.1-25.3-4.62-10.6-8.76-22-10.4-33.3-1.64-11.2-.87-23 6.61-32v-.1c5.19-6.2 
+                                12.69-7.9 19.39-8.2 6.8-.2 13.6.9 19.9 2.4 3.4.8 6.5 1.7 9.5 2.6-.8-9.4-1.5-22.1-1.1-36.1.3-8.3 1-16.8 2.4-25.1zm194.3 22.9c-11.1 
+                                0-23.2 1.3-36.2 4.5-44.9 10.5-71.9 31-90.2 56.8-18.3 25.8-27.7 57.4-34.8 89.7-7.1 32.4-11.8 65.2-22 93.4-5.4 14.9-12.7 28.7-22.8 
+                                40 129.5-22.2 254.5-67 351-112.1-2.2-14-10.2-56-31.9-96-13.2-24.3-31.2-46.9-55.2-61-15.1-8.8-32.5-14.5-53.2-15.2-1.6-.1-3.1-.1-4.7-.1z">
+							</path>
+						</svg>
+						<h3>Taco</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box__content">
+					<img class="box__content--image" src="../../assets/images/food4.png" alt="">
+					<div class="box__content--overlay">
+						<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+							height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path d="M21.35 26.1l-2.68 15.78L382.7 103.9l2.6-15.79L21.35 26.1zm-.55 57.94l-1.58 15.92L383.2 136l1.6-16-364-35.96zm202.6 
+                                52.16c-1.8 7.8-7.7 19.5-14.3 31C201.1 181 192 194 192 208c0 18.7 9.8 31.1 18 40.3 8.2 9.3 14 15.3 14 23.7 0 5.7-3.3 14.8-7.8 
+                                24h18c3.4-7.9 5.8-16 5.8-24 0-15.5-10.2-25.5-18-34.3-7.8-8.8-14-16.4-14-29.7 0-4.9 6.9-18.8 14.9-32.8 7-12.1 14.8-24.6 
+                                16.7-37.4l-16.2-1.6zm40 4c-1.7 7.5-7.5 18.2-14.2 28.8-8 12.8-17.2 25-17.2 39 0 18.7 9.8 31.1 18 40.3 8.2 9.3 14 15.3 14 23.7 
+                                0 5.7-3.3 14.8-7.8 24h18c3.4-7.9 5.8-16 5.8-24 0-15.5-10.2-25.5-18-34.3-7.8-8.8-14-16.4-14-29.7 0-4.9 6.8-17.6 14.8-30.5 
+                                7-11.3 14.8-23.1 16.8-35.8l-16.2-1.5zm40 3.9c-1.7 7.2-7.4 16.9-14 26.7-8 11.8-17.4 23.2-17.4 37.2 0 18.7 9.8 31.1 18 40.3 8.2 
+                                9.3 14 15.3 14 23.7 0 5.7-3.3 14.8-7.8 24h18c3.4-7.9 5.8-16 5.8-24 0-15.5-10.2-25.5-18-34.3-7.8-8.8-14-16.4-14-29.7 0-4.9 
+                                6.6-16.4 14.6-28.3 7-10.4 15-21.5 16.9-34l-16.1-1.6zM40.33 312c1.68 42.5 16.6 76.8 48.58 101.7C122.9 440.1 177.1 456 256 
+                                456s133.1-15.9 167.1-42.3c32-24.9 46.9-59.2 48.6-101.7H40.33zM192 472v16h128v-16H192z">
+							</path>
+						</svg>
+						<h3>Pho</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box__content">
+					<img class="box__content--image" src="../../assets/images/food5.png" alt="">
+					<div class="box__content--overlay">
+						<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+							height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path d="M21.35 26.1l-2.68 15.78L382.7 103.9l2.6-15.79L21.35 26.1zm-.55 57.94l-1.58 15.92L383.2 136l1.6-16-364-35.96zm202.6 
+                                52.16c-1.8 7.8-7.7 19.5-14.3 31C201.1 181 192 194 192 208c0 18.7 9.8 31.1 18 40.3 8.2 9.3 14 15.3 14 23.7 0 5.7-3.3 14.8-7.8 
+                                24h18c3.4-7.9 5.8-16 5.8-24 0-15.5-10.2-25.5-18-34.3-7.8-8.8-14-16.4-14-29.7 0-4.9 6.9-18.8 14.9-32.8 7-12.1 14.8-24.6 
+                                16.7-37.4l-16.2-1.6zm40 4c-1.7 7.5-7.5 18.2-14.2 28.8-8 12.8-17.2 25-17.2 39 0 18.7 9.8 31.1 18 40.3 8.2 9.3 14 15.3 14 23.7 
+                                0 5.7-3.3 14.8-7.8 24h18c3.4-7.9 5.8-16 5.8-24 0-15.5-10.2-25.5-18-34.3-7.8-8.8-14-16.4-14-29.7 0-4.9 6.8-17.6 14.8-30.5 
+                                7-11.3 14.8-23.1 16.8-35.8l-16.2-1.5zm40 3.9c-1.7 7.2-7.4 16.9-14 26.7-8 11.8-17.4 23.2-17.4 37.2 0 18.7 9.8 31.1 18 40.3 8.2 
+                                9.3 14 15.3 14 23.7 0 5.7-3.3 14.8-7.8 24h18c3.4-7.9 5.8-16 5.8-24 0-15.5-10.2-25.5-18-34.3-7.8-8.8-14-16.4-14-29.7 0-4.9 
+                                6.6-16.4 14.6-28.3 7-10.4 15-21.5 16.9-34l-16.1-1.6zM40.33 312c1.68 42.5 16.6 76.8 48.58 101.7C122.9 440.1 177.1 456 256 
+                                456s133.1-15.9 167.1-42.3c32-24.9 46.9-59.2 48.6-101.7H40.33zM192 472v16h128v-16H192z">
+							</path>
+						</svg>
+						<h3>Spaghetti</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box__content">
+					<img class="box__content--image" src="../../assets/images/food6.png" alt="">
+					<div class="box__content--overlay">
+						<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+							height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M376.4 19.14c-24.4-.17-55.5 6.54-89 13.02-33.4 6.48-68.9 12.8-100.2 12.56-31.2-.24-57.4-6.91-74.6-24.83L99.67 32.35C128 
+                                59.39 166 63.49 200.2 62.49c-8.4 1.48-17.2 2.59-26.1 3.21-36.7 2.54-75.23-2.61-92.58-13.15l-9.34 15.38C96.57 82.72 136.4 86.36 
+                                175.3 83.65c38.6-2.68 75.7-11.02 94.7-29.9 7.1-1.28 14.1-2.59 20.9-3.92 33.6-6.51 64.5-12.84 85.3-12.69 10.5.1 18 1.91 21.9 4.57 
+                                2.3 1.53 3.9 3.15 4.8 5.78h18.3c-1.7-8.79-6.3-16.19-13-20.74-8.8-5.86-19.6-7.52-31.8-7.61zm51.7 46.1c-44.9-.24-134 8.46-209.4 29.2 
+                                1.1-.11 2.2-.17 3.3-.17 18.1 0 33 14.93 33 33.03s-14.9 33-33 33-33-14.9-33-33c0-13 7.7-24.3 18.7-29.71-27.9 8.31-53.4 18.31-73.4 
+                                30.21 51.7 27.3 77.4 63 99.9 97.3 73.4-20.4 119.8-42.8 174.9-95.9-24.1 5.9-35.3 6.5-56.2 5.7 28.1-10.5 97-43.23 118.7-55.9-29.4 
+                                2.28-74.5 12.38-100.9 18.44 14.9-13.43 51.3-28.42 64.4-32.08-2.2-.1-4.5-.1-7-.12zM222 112.3c-8.4 0-15 6.6-15 15s6.6 15 15 15 
+                                15-6.6 15-15-6.6-15-15-15zm-120.5 20.2c-17.58 26.8-31.42 52.3-41.44 76.2 25.1 34.2 57.14 63.2 115.54 80.3 10-17.5 24.4-35.6 
+                                43-54.6-25.3-38.9-51.8-75.5-117.1-101.9zm-48.93 96c-12.03 35.4-15.18 67.4-9.37 96.1 32.35 23.5 59.1 38.1 115.5 25.9-1-14.5 1.9-29.6 
+                                8.7-45.3-54.9-16.7-89.29-44.9-114.83-76.7zM231 247.2c-4.5 4.6-8.7 9.1-12.6 13.6 31.6 17.7 54.7 38.7 77.8 70.8l14.6-10.6c-23.4-32.4-48-55.2-79.8-73.8zm-28.3 
+                                32.9c-3.8 5.2-7.2 10.3-10.1 15.3 8.6 3.6 21.7 10.7 33.8 19 15 10.4 28.9 23.4 33.6 32.6l16-8.4c-7.7-14.6-23.2-27.7-39.3-38.9-11.9-8.3-23.8-15.1-34-19.6zm-20.1 
+                                35.5c-2.5 6.2-4.1 12.2-5.1 17.9 4.7 1 12.9 4 20.8 9.1 10.7 7.1 21.5 17.3 27 26.1l15.2-9.6c-7.6-12-19.7-23.2-32.3-31.5-8.6-5.6-17-10.4-25.6-12zM52 352.1c15.4 
+                                34.5 46.57 64.6 95.2 89.5 11.6-1 20.9-2.1 28.7-5.9 6.9-3.4 13.3-9 19.9-20.9-16.9-13.7-28.4-29.2-33.8-46.7-49.2 10.4-81.56.9-110-16zm370.1 72.6c-10.4-.1-43.1 
+                                4.2-75.8 11-23.5 5-47.6 11.5-64.9 18 11.7-3.1 25.8-4.3 41.3-4.7 6.1-.2 12.5-.2 18.9-.1 19.2.4 39.2 2.2 57 4.8 12.3 1.9 23.4 3.9 32.9 6.5 6.9-8.3 12.4-18.2 
+                                12.9-24.1.5-10.9-16.7-11.3-22.3-11.4zm-211.7.7c-9.7 14.2-19.1 24.7-34.1 29.5 21.2 8.8 44.9 16.8 71.4 24 8.3-7.3 16-17.2 14.3-27.7-19.8-7.8-37.1-16.3-51.6-25.8zm63.3 
+                                50.9l-9.2 8.3c13.3 4 34.8 9 59.2 8.2 36.3-1.3 84.3 2.2 114.8-10.5-48.8-12.3-126.4-27.6-164.8-6z">
+							</path>
+						</svg>
+						<h3>Tom Yum</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box__content">
+					<img class="box__content--image" src="../../assets/images/food7.png" alt="">
+					<div class="box__content--overlay">
+						<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+							height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path d="M21.35 26.1l-2.68 15.78L382.7 103.9l2.6-15.79L21.35 26.1zm-.55 57.94l-1.58 15.92L383.2 136l1.6-16-364-35.96zm202.6 
+                                52.16c-1.8 7.8-7.7 19.5-14.3 31C201.1 181 192 194 192 208c0 18.7 9.8 31.1 18 40.3 8.2 9.3 14 15.3 14 23.7 0 5.7-3.3 14.8-7.8 
+                                24h18c3.4-7.9 5.8-16 5.8-24 0-15.5-10.2-25.5-18-34.3-7.8-8.8-14-16.4-14-29.7 0-4.9 6.9-18.8 14.9-32.8 7-12.1 14.8-24.6 
+                                16.7-37.4l-16.2-1.6zm40 4c-1.7 7.5-7.5 18.2-14.2 28.8-8 12.8-17.2 25-17.2 39 0 18.7 9.8 31.1 18 40.3 8.2 9.3 14 15.3 14 23.7 
+                                0 5.7-3.3 14.8-7.8 24h18c3.4-7.9 5.8-16 5.8-24 0-15.5-10.2-25.5-18-34.3-7.8-8.8-14-16.4-14-29.7 0-4.9 6.8-17.6 14.8-30.5 
+                                7-11.3 14.8-23.1 16.8-35.8l-16.2-1.5zm40 3.9c-1.7 7.2-7.4 16.9-14 26.7-8 11.8-17.4 23.2-17.4 37.2 0 18.7 9.8 31.1 18 40.3 8.2 
+                                9.3 14 15.3 14 23.7 0 5.7-3.3 14.8-7.8 24h18c3.4-7.9 5.8-16 5.8-24 0-15.5-10.2-25.5-18-34.3-7.8-8.8-14-16.4-14-29.7 0-4.9 
+                                6.6-16.4 14.6-28.3 7-10.4 15-21.5 16.9-34l-16.1-1.6zM40.33 312c1.68 42.5 16.6 76.8 48.58 101.7C122.9 440.1 177.1 456 256 
+                                456s133.1-15.9 167.1-42.3c32-24.9 46.9-59.2 48.6-101.7H40.33zM192 472v16h128v-16H192z">
+							</path>
+						</svg>
+						<h3>Ramen</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box__content">
+					<img class="box__content--image" src="../../assets/images/food8.png" alt="">
+					<div class="box__content--overlay">
+						<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
+							width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+								d="M13.665 6.113a1 1 0 01-.667-.977L13 5a4 4 0 00-6.483-3.136 1 1 0 01-.8.2 4 4 0 00-3.693 6.61 1 1 0 01.2 1 4 4 0 
+                                006.67 4.087 1 1 0 011.262-.152 2.5 2.5 0 003.715-2.905 1 1 0 01.341-1.113 2.001 2.001 0 00-.547-3.478zM14 5c0 .057 0 .113-.003.17a3.001 
+                                3.001 0 01.822 5.216 3.5 3.5 0 01-5.201 4.065 5 5 0 01-8.336-5.109A5 5 0 015.896 1.08 5 5 0 0114 5z"
+								clip-rule="evenodd">
+							</path>
+							<circle cx="8" cy="8" r="3"></circle>
+						</svg>
+						<h3>Fried Egg</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Speciality Section end -->
+
+	<!-- About Us section -->
+	<section class="about-us" id="about-us">
+		<h2 class="heading"><span>About</span> Us</h2>
+		<div class="about-container">
+			<div class="about-container__inside">
+				<h2>About Us</h2>
+				<br />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Phasellus consequat tellus quis viverra molestie.
+					<br />
+					<br />
+					Vivamus semper lorem nec accumsan elementum. Vivamus pharetra pulvinar leo quis dapibus.
+					Etiam vel sollicitudin augue.
+					Nulla sodales turpis eu justo fringilla, id fermentum dolor viverra.
+				</p>
+				<br />
+				<div class="about-container__inside--link">
+					<button class="btn"><a href="#">www.foodaholic.vn</a></button>
+				</div>
+			</div>
+		</div>
+		<div class="promo-container">
+			<div class="promo-container__title">
+				<h3>Lorem Ipsum</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed est nisl.
+					Integer vulputate lorem leo, sit amet lacinia neque sagittis quis. Nam vel lorem vitae ligula
+					laoreet ultricies.
+					Pellentesque risus leo, placerat in mattis ut, mollis at dolor. Quisque quis ligula mattis, vehicula
+					orci eu, gravida elit.
+					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+				</p>
+			</div>
+			<div class="promo-container__video">
+				<video width="65%" controls autoplay muted>
+					<source src="../../assets/video/promovideo.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</section>
+	<!-- About Us section end -->
+
+	<!-- Booking section -->
+	<section class="booking" id="booking">
+		<h2 class="heading"><span>Book</span> Now</h2>
+		<div class="booking-container">
+			<div id="contactInfo">
+				<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="3em" width="3em"
+					xmlns="http://www.w3.org/2000/svg">
+					<path fill="none" d="M16.585,19.999l2.006-2.005l-2.586-2.586l-1.293,1.293c-0.238,0.239-0.579,0.342-0.912,0.271 
+				                        c-0.115-0.024-2.842-0.611-4.502-2.271s-2.247-4.387-2.271-4.502c-0.069-0.33,0.032-0.674,0.271-0.912l1.293-1.293L6.005,5.408 
+				                        L4,7.413c0.02,1.223,0.346,5.508,3.712,8.874C11.067,19.643,15.337,19.978,16.585,19.999z">
+					</path>
+					<path d="M16.566 21.999c.005 0 .023 0 .028 0 .528 0 1.027-.208 1.405-.586l2.712-2.712c.391-.391.391-1.023 
+				                        0-1.414l-4-4c-.391-.391-1.023-.391-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594c.391-.391.391-1.023 
+				                        0-1.414l-4-4c-.375-.375-1.039-.375-1.414 0L2.586 5.999C2.206 6.379 1.992 6.901 2 7.434c.023 1.424.4 6.37 4.298 10.268S15.142 21.976 16.566 
+				                        21.999zM6.005 5.408l2.586 2.586L7.298 9.287c-.239.238-.341.582-.271.912.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271c.333.07.674-.032.912-.271l1.293-1.293 
+				                        2.586 2.586-2.006 2.005c-1.248-.021-5.518-.356-8.873-3.712C4.346 12.921 4.02 8.636 4 7.413L6.005 5.408zM19.999 10.999h2c0-5.13-3.873-8.999-9.01-8.999v2C17.051 4 
+				                        19.999 6.943 19.999 10.999z">
+					</path>
+					<path d="M12.999,8c2.103,0,3,0.897,3,3h2c0-3.225-1.775-5-5-5V8z">
+					</path>
+				</svg>
+				<br/>
+				<p>Let's call</p>
+				<a href="tel:0123-456-789">0123.456.789</a>
+				<br/>
+				<a href="tel:0987-654-321">0987.654.321</a>
+			</div>
+			<div class="booking-container__inside">
+				<div class="booking-container__inside--option">
+					<input type="radio" name="booking" id="online" onclick="content(0)" hidden checked>
+						<label for="online"><span>Online booking</span></label>
+					</input>
+					<input type="radio" name="booking" id="phone" onclick="content(1)" hidden>
+						<label for="phone"><span>Phone booking</span></label>
+					</input>
+				</div>
+				<form class="booking-container__inside--form" id="form" action="/" method="GET">
+					<div class="form-group">
+						<div class="form-group__line">
+							<!-- name -->
+							<label for="name">Name</label>
+							<input class="form-control" id="fname" type="text" name="name" placeholder="Enter your name">
+							<div id="error_name" style="display: none">Please fill in this box</div>
+						</div>
+						<div class="form-group__line">
+							<!-- phone number -->
+							<label for="phone_number">Phone number</label>
+							<input class="form-control" id="phone_number" type="text" name="phone_number" placeholder="Phone number">
+							<div id="error_phone_number" style="display: none">Please fill in this box</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-group__line">
+							<!-- email -->
+							<label for="email">Email</label>
+							<input class="form-control" id="email" type="email" name="email" placeholder="Enter your email">
+							<div id="error_email" style="display: none">Please fill in this box</div>
+						</div>
+						<div class="form-group__line">
+							<!-- guest -->
+							<label for="guests">Number of Guests</label>
+							<input class="form-control" id="guests" type="number" name="guests" placeholder="Number of guests">
+							<div id="error_guests" style="display: none">Please fill in this box</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-group__line">
+							<!-- date -->
+							<label for="date">Date</label>
+							<input class="form-control" id="date" type="date" name="date">
+							<div id="error_date" style="display: none">Please fill in this box</div>
+						</div>
+						<div class="form-group__line">
+							<!-- time -->
+							<label for="time">Time</label>
+							<input class="form-control" id="time" type="time" name="time">
+							<div id="error_time" style="display: none">Please fill in this box</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="note">Note</label>
+						<textarea class="form-control" id="note" placeholder="Enter your note here..."></textarea>
+					</div>
+					<div class="submit">
+						<input type="button" value="Booking" class="submit-btn" onclick="submitForm()">
+					</div>
+				</form>
+				<br />
+			</div>
+		</div>
+	</section>
+	<!-- Booking section end -->
+
+	<!-- Footer Section -->
+	<footer>
+		<div class="footer">
+			<div class="contact" id="contact">
+				<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
+					width="1em" xmlns="http://www.w3.org/2000/svg">
+					<path fill="none" d="M16.585,19.999l2.006-2.005l-2.586-2.586l-1.293,1.293c-0.238,0.239-0.579,0.342-0.912,0.271 
+                        c-0.115-0.024-2.842-0.611-4.502-2.271s-2.247-4.387-2.271-4.502c-0.069-0.33,0.032-0.674,0.271-0.912l1.293-1.293L6.005,5.408 
+                        L4,7.413c0.02,1.223,0.346,5.508,3.712,8.874C11.067,19.643,15.337,19.978,16.585,19.999z">
+					</path>
+					<path d="M16.566 21.999c.005 0 .023 0 .028 0 .528 0 1.027-.208 1.405-.586l2.712-2.712c.391-.391.391-1.023 
+                        0-1.414l-4-4c-.391-.391-1.023-.391-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594c.391-.391.391-1.023 
+                        0-1.414l-4-4c-.375-.375-1.039-.375-1.414 0L2.586 5.999C2.206 6.379 1.992 6.901 2 7.434c.023 1.424.4 6.37 4.298 10.268S15.142 21.976 16.566 
+                        21.999zM6.005 5.408l2.586 2.586L7.298 9.287c-.239.238-.341.582-.271.912.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271c.333.07.674-.032.912-.271l1.293-1.293 
+                        2.586 2.586-2.006 2.005c-1.248-.021-5.518-.356-8.873-3.712C4.346 12.921 4.02 8.636 4 7.413L6.005 5.408zM19.999 10.999h2c0-5.13-3.873-8.999-9.01-8.999v2C17.051 4 
+                        19.999 6.943 19.999 10.999z">
+					</path>
+					<path d="M12.999,8c2.103,0,3,0.897,3,3h2c0-3.225-1.775-5-5-5V8z">
+					</path>
+				</svg>
+				<p>Order: <a href="#">0123.456.789</a> / <a href="#">0987.654.321</a></p>
+			</div>
+			<div class="email-box">
+				<h3>Join our mailing list and receive news and offers</h3>
+				<form id="form-submit" action="#">
+					<div class="submit-area">
+						<input id="subscribe-email" type="email" name="" placeholder="Type your email...">
+						<button id="subscribe">Subscribe</button>
+						<div class="modal-container">
+							<div class="modal">
+								<h2></h2>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="info">
+				<h3>#Foodaholic</h3>
+				<p>Tel: <a href="#">0123.456.789</a> &nbsp; | &nbsp; Email: <a href="#">info@foodaholic.com</a></p>
+			</div>
+			<div class="copyright">
+				<p>© 2023 by VietAnhNguyen. All rights reserved</p>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section  end -->
+
+	<script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

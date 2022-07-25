@@ -1,0 +1,1263 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins:wght@200&display=swap');
+
+* {
+    font-family: 'Noto Sans JP';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    outline: none;
+}
+
+body {
+    position: relative;
+}
+
+/* header */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 2rem;
+    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, .1);
+    background: #fff;
+    font-size: 110%;
+    z-index: 1000;
+}
+
+header .logo {
+    font-weight: 800;
+    text-decoration: none;
+    color: #1e0f3d;
+    display: flex;
+    align-items: center;
+}
+
+header #navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header #navbar ul li button {
+    margin: 0.2rem;
+    color: #1e0f3d;
+    transition: all 0.3s ease-in-out;
+    font-weight: 800;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0.5rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+header #navbar ul li button a {
+    text-decoration: none;
+    color: #1e0f3d;
+    cursor: pointer;
+
+}
+
+/* end header */
+
+/* home */
+.home {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    background: url(/assets/images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    width: 50%;
+    color: #1e0f3d;
+    cursor: default;
+}
+
+.home .content h3 {
+    font-size: 200%;
+    cursor: default;
+}
+
+.home .content p {
+    padding-bottom: 15px;
+}
+
+.home .content .btn {
+    font-size: 110%;
+    padding: 0.3rem 0.6rem;
+    margin-top: 1rem;
+    border: 1px solid #1e0f3d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #1e0f3d;
+    box-shadow: inset 0 0 0 0;
+    transform:scaleX(0);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.home .content .btn:hover {
+    background: #1e0f3d;
+    box-shadow: inset 0 0 50px 0 #1e0f3d;
+    color: #fff;   
+}
+
+.home .image {
+    width: 50%;
+}
+
+.home .image img {
+    width: 100%;
+    height: 100%;
+    animation: float 3s linear infinite;
+    position: relative;
+}
+
+.scroll {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+}
+
+.scroll .social-media {
+    font-size: 30px;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.scroll .social-media:hover {
+    transform: scale(1.2);
+}
+
+.scroll .social-media a {
+    color: #0d0a38;
+    transition: all 0.4s ease-in-out;
+}
+
+.scroll .social-media:hover a {
+    color: #ce0764;
+}
+
+.scroll .social-media a * {
+    cursor: pointer;
+}
+/* end home  */
+
+/* speciality section */
+.speciality {
+    margin-top: 5rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2.5rem 1rem 1rem 1rem;
+    color: #a1a1a1;
+    cursor: default;
+}
+
+.heading span {
+    color: #1e0f3d
+}
+
+.box-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    position: relative;
+    width: 25%;
+    height: auto;
+    padding: 5px;
+}
+
+.box__content--image {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease-out 0.3s;
+    position: relative;
+}
+
+.box__content:hover .box__content--image {
+    transform: scale(1.2);
+}
+
+.box__content {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box__content--overlay {
+    position: absolute;
+    background-color: rgb(53, 54, 88);
+    background-color: rgb(30, 15, 62, 0.8);
+    transition: 0.8s ease;
+    opacity: 0;
+    text-align: left;   
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box__content--overlay svg {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+.box__content--overlay h3 {
+    font-size: 1rem; 
+}
+
+.box__content--overlay p {
+    color: #e7e7e7;
+    font-size: 0.8rem;
+}
+
+.box__content:hover .box__content--overlay {
+    opacity: 1;
+}
+/* speciality section end */
+
+/* about us section */
+.about-us {
+    margin-top: 5rem;
+    color: #1e0f3d;
+}
+
+.about-container {   
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/about-us-bg.jpg) no-repeat left;
+    background-size: 100%;
+    overflow: hidden;
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.about-container__inside {
+    width: 60%;
+    left: auto;
+    right: auto;
+    padding: 3rem;
+    background: rgb(255, 255, 255, 0.7);  
+}
+
+.about-container__inside--link {
+    display: flex;
+    justify-content: center;
+}
+
+.about-container__inside p {
+    font-family: 'Red Hat Mono', monospace;
+}
+
+.about-container__inside--link .btn {
+    position: relative;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    outline: none;
+    width: 180px;
+    background-color: #1e0f3d;
+    box-shadow: inset 0 0 0 0 #1e0f3d;
+    border-radius: 10px;
+    transition: all 0.3s ease-out 0.1s;
+    cursor: pointer;
+}
+
+.about-container__inside--link .btn:hover {
+    box-shadow: inset 180px 0 0 0 #ba1e68;
+}
+
+.about-container__inside--link .btn a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.promo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-container__title {
+    width: 50%;
+    padding: 70px;
+    text-align: center;
+}
+
+.promo-container__title h3 {
+    font-weight: 900;
+    font-size: 150%;
+    color: #ba1e68;
+    margin-bottom: 10px;
+}
+
+.promo-container__video {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-container__video video {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background: #000;
+}
+/* about us section end */
+
+/* booking section */
+.booking-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/booking-bg.jpg) no-repeat left;
+    background-size: 100%;
+    overflow: hidden;
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booking-container__inside {
+    width: 65%;
+    left: auto;
+    right: auto;
+    background: rgb(255, 255, 255, 0.7);
+    height: 455px;
+}
+.booking-container__inside--option {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    text-align: center;
+}
+.booking-container__inside--option label {
+    height: 100%;
+    width: 50%;
+    border: none;
+    cursor: pointer;
+    background: #1e0f3d;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+#form {
+    height: 380px;
+}
+.form-group {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #0d0a38;
+}
+.form-group:first-child {
+    padding-top: 50px;
+}
+.form-group > .form-group__line:first-child {
+    padding-right: 150px;
+}
+.form-group>.form-group__line:last-child {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.form-group__line {
+    width: 50%;
+}
+input[type="radio"]:checked + label {
+    background: #ce0764;
+}
+.form-group__line .form-control {
+    width: 150px;
+    float: right;
+    outline: none;
+}
+.form-group > textarea {
+    width: 100%;
+    height: 80px;
+    margin-left: 65px;
+    margin-right: 40px;
+    outline: none;
+    padding-left: 2px;
+    padding-top: 2px;
+    border: 0.5px solid #0d0a38;
+}
+.submit {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.submit-btn {
+    width: 100px;
+    height: 40px;
+    color: #ffffff;
+    background: #0d0a38;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.submit-btn:hover {
+    transform: translate(0, -4px);
+    background: #ce0764;
+    box-shadow: 2px 2px 2px 1px rgba(206, 7, 100, .5);
+}
+.form-group__line > input {
+    height: 30px;
+    border: 0.5px solid #0d0a38;
+    padding-left: 2px;
+}  
+#contactInfo {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    color: #0d0a38;
+}
+#contactInfo a {
+    text-decoration: none;
+    color: #0d0a38;
+    font-size: 18px;
+    transition: 0.3s;
+}
+#contactInfo a:hover {
+    color: #ba1e68
+
+}
+#error_name, #error_phone_number, #error_email, #error_guests, #error_date, #error_time {
+    color: #ec2314;
+    font-size: 14px;
+    padding-top: 8px;
+}
+/* booking section end */
+
+/* footer */
+.footer {
+    width: 100%;
+    margin-top: 100px;
+}
+.contact {
+    background: #d8d2d2;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+}
+.contact svg {
+    margin-right: 5px;
+    animation: ring 0.5s linear infinite;
+    position: relative;
+}
+.contact svg, .contact p {
+    color: #250a63;
+}
+.contact a {
+    color: #250a63;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    font-weight: 800;
+}
+.contact a:first-child {
+    padding-left: 10px;
+}
+.contact a:hover {
+    color: #ce0764;
+}
+.email-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 1rem;
+    padding: 60px 0;
+}
+.email-box h3 {
+    font-family: 'Red Hat Mono', monospace;
+    color: #1e0f3d;
+}
+.email-box #form-submit {
+    position: relative;
+    margin-top: 2rem;
+}
+.email-box #form-submit .submit-area {
+    display: flex;
+    justify-content: center;
+    width: 380px;
+}
+#form-submit .submit-area input {
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.4s ease-in;
+    border: none;
+    font-size: 18px;
+    height: 40px;
+    width: 70%;
+    outline: none;
+    padding-left: 15px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: #d8d2d2;
+}
+#form-submit .submit-area button {
+    background: rgb(30, 15, 61);
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    border: none;   
+    width: 120px;
+    font-size: 18px;
+}
+#form-submit .submit-area button:hover {
+    background: #a1a1a1;
+    color: #1e0f3d;
+}
+#form-submit .submit-area .validate-icons {
+    position: absolute;
+    bottom: 10px;
+    left: 63%;
+}
+.validate-icons .icon1 {
+    display: none;
+    color: #ec2314;
+}
+.validate-icons .icon2 {
+    display: none;
+    color: #009c1a;
+}
+.info {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #1e0f3d;
+}
+.info h3 {
+    font-size: 200%;
+    font-family: 'PT Sans Narrow';
+}
+.info p {
+    margin: 0.6rem;
+}
+.info a {
+    color: #250a63;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    font-weight: 800;
+}
+.info a:hover {
+    color: #ce0764;
+}
+.copyright {
+    background: #1e0f3d;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.copyright p {
+    font-family: monospace;
+    font-size: 120%;
+}
+/* footer end */
+
+#toggle {
+    display: none;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(1rem);
+    }
+}
+
+@keyframes ring {
+    0%,
+    100% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .home .content {
+        font-size: 1.1rem;
+    }
+    .box__content--overlay p {
+        font-size: 0.6rem;
+    } 
+    .about-container {
+        padding: 100px 0;
+    }
+    .promo-container__title p {
+        font-size: 13px;
+    }
+    .promo-container__video {
+        width: 55%;
+    }
+    .promo-container__video video {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        background: rgb(255, 255, 255, 0);
+    }
+    .booking h2 {
+        padding: 13.5rem 1rem 1rem 1rem;
+    }
+    .booking-container {
+        padding: 28px 0;
+    }
+    .booking-container__inside--option label {
+        font-size: 14px;
+    }
+    .booking-container__inside {
+        width: 80%;
+    }
+    .form-group {
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    .form-group:first-child {
+        padding-top: 55px;
+    }
+    .form-group>.form-group__line:first-child {
+        padding-right: 60px;
+    }
+    .form-group>.form-group__line:last-child {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    .form-group label {
+        font-size: 12px;
+    }
+    .form-group>textarea {
+        margin-left: 46px;
+        margin-right: 0px;
+    }
+    #error_name,
+    #error_phone_number,
+    #error_email,
+    #error_guests,
+    #error_date,
+    #error_time {
+        color: #ec2314;
+        font-size: 12px;
+        padding-top: 14px;
+    }
+    .contact {
+        padding-left: 3rem;
+    } 
+    #contactInfo {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:820px) {
+    .about-container {
+        padding: 50px 0;
+    }
+    header #navbar ul li button:hover {
+        background-color: #ce0764;
+    }
+    header #navbar ul li button:hover a {
+        color: #fff;
+    }
+    .form-group>textarea {
+        margin-left: 67px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        margin: 0;
+        padding: 0;
+        font-size: 50%;
+    }
+    header {
+        font-size: 90%;
+        z-index: 1000 !important;
+        padding: 0.5rem;
+        height: 35px;
+        align-items: center;
+    }
+    header .logo {
+        padding-left: 16px;
+        font-size: 12px;
+        z-index: 100;
+        height: 35px;
+        background: #ffffff;
+    }
+    #toggle {
+        display: initial;
+        cursor: pointer;
+        color: #1e0f3d;
+        position: absolute;
+        font-size: 13px;
+        right: 2rem;
+        z-index: 100;
+        transform:rotate(0deg);
+        transition: all 1s ease-in-out;
+    }
+    #toggle:hover {
+        transform: rotate(360deg);
+    }
+    #navbar {
+        position: absolute;
+        transition: 0.4s;
+        top: -800px;
+        left: 0;
+        right: 0;   
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    #navbar.active {
+        top: 35px;
+    }   
+    #navbar ul {
+        position: absolute;
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100%;
+        background: #fff;
+    }
+    #navbar ul li {
+        width: auto;
+    }
+    #navbar ul li button {
+        border-bottom: none !important;
+        margin-left: 0 !important;
+        padding: 1.5rem 1rem !important;
+        background: #1e0f3d;
+        position: relative;
+        width: 100% !important;
+        text-align: left;
+        border-radius: 0 !important;
+        transition: 0.3s !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    #navbar ul li button:hover {
+        border-left: 0.4rem solid #ba1e68;
+        background: #f2cef2;
+    }
+    #navbar ul li button a {
+        color: #fff;
+        padding-left: 14px;
+    }
+    #navbar ul li button:hover a {
+        color: #1e0f3d;
+    }
+    .heading {
+        font-size: 20px;
+    }
+    .home {
+        font-size: 80%;
+    }
+    .home .content {
+        font-size: 2rem;
+    }
+    .home .content .btn {
+        font-size: 95%;
+        padding: 0.5rem 1rem;
+    }
+    .scroll {
+        padding-right: 20px;
+        transition: 0.3s;
+    }
+    .scroll.active {
+        padding-top: 100px;
+    }
+    .scroll .social-media {
+        font-size: 20px;
+    }
+    .about-container {
+        padding: 80px 0;
+    }
+    .about-container__inside p {
+        margin-bottom: 10px;
+    }
+    .about-container__inside--link .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+    }
+    .box-container .box {
+        position: relative;
+        width: 50%;
+        height: auto;
+        padding: 5px;
+    }
+    .box__content--overlay svg {
+        font-size: 4rem;
+    }
+    .box__content--overlay h3 {
+        font-size: 2rem;
+    }
+    .box__content--overlay p {
+        font-size: 1.8rem;
+    }
+    .inside-container .connect-link .btn {
+        width: 90px;
+    }
+    .promo-container {
+        flex-direction: column;
+    }
+    .promo-container__title {
+        padding: 30px;
+        width: 70% !important;
+    }
+    .promo-container__title h3 {
+        font-size: 20px;
+    }
+    .promo-container__title p {
+        font-size: 12px;
+    }
+    .promo-container__video {
+        width: 70%;    
+        height: 20rem;
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact {
+        height: 40px;
+        padding-left: 3rem;
+        font-size: 1.5rem;
+    }
+    .email-box {
+        padding: 20px;
+    }
+    .email-box h3 {
+        font-size: 1.6rem;
+    }
+    .email-box #form-submit .submit-area {
+        width: 250px;
+    }
+    .email-box #form-submit input {
+        width: 70%;
+        padding-left: 20px;
+        font-size: 1.6rem;
+        height: 30px;
+    }
+    #form-submit .submit-area button {
+        width: 70px;
+        font-size: 1.3rem;
+    }
+    .info { 
+        height: 60px;
+    }
+    .copyright {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .home {
+        justify-content: center;
+        position: relative;
+        background-size: 110%;
+        z-index: 100;
+    }
+    .home .content {
+        font-size: 1.5rem;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 200px 50px;
+        position: absolute;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.4);
+        color: #ffffff;
+    }
+    .home .content .btn {
+        color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+    .home .content .btn:hover {
+        border: 1px solid #1e0f3d;
+    }
+    .home .image {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box__content--overlay p {
+        font-size: 1.3rem;
+    }
+    .scroll.active {
+        padding-top: 80px;
+    }
+    .about-us {
+        padding-bottom: 50px;
+    }
+    .promo-container__video {
+        padding-top: 0;
+    }
+    .footer {
+        margin-top: 0;
+    }
+    .contact {
+        height: 25px;
+        padding-left: 2rem;
+        margin-top: 65px;
+    }
+    .email-box {
+        padding: 10px;
+    }
+    .email-box #form-submit{
+        display: flex;
+        justify-content: center;
+    }
+    .email-box #form-submit input {
+        width: 50%;
+        height: 23px;
+        font-size: 9px;
+    }
+    .email-box #form-submit input[type="text"] {
+        padding-left: 8px;
+    }
+    .info { 
+        height: 70px;
+    }
+    .copyright {
+        height: 30px;
+    }
+    .booking h2 {
+        padding: 4.5rem 1rem 1rem 1rem;
+    }
+    .booking-container__inside {
+        height: 480px;
+    }
+    .booking-container__inside--option {
+        height: 30px;
+    }
+    .booking-container__inside--option label {
+        font-size: 11px;
+    }
+    .form-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .form-group:first-child {
+        padding-top: 50px;
+    }
+    .form-group label {
+        width: 30%;
+    }
+    .form-group__line>input, .form-group>textarea {
+        width: 70% !important;
+    }
+    .form-group label, .form-group__line>input, .form-group>textarea {
+        font-size: 11px;
+    }
+    .form-group>.form-group__line {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+    .form-group__line>input {
+        height: 25px;
+    }
+    .form-group__line .form-control {
+        width: 245px;
+    }
+    .form-group>textarea {
+        margin-left: 32px;
+        height: 50px;  
+    }
+    .form-group:nth-child(4){
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    #error_name,
+    #error_phone_number,
+    #error_email,
+    #error_guests,
+    #error_date,
+    #error_time {
+        font-size: 11px;
+        padding-top: 0;
+    }
+    #contactInfo {
+        font-size: 18px;
+    }
+    .booking-container {
+        background-size: auto;
+        width: 100%;
+        height: 560px;
+    }
+    .submit-btn {
+        width: 70px;
+        height: 25px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #navbar ul li button {
+        padding: 1.3rem 1rem !important;
+    }
+    .home {
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .home .content {
+        font-size: 1.2rem;
+    }
+    .scroll {
+        padding-right: 10px;
+    }
+    .scroll.active {
+        padding-top: 160px;
+    }
+    .speciality {
+        margin-top: 3rem;
+    }
+    .about-container {
+        padding: 28px 0;
+    }
+    .about-container .inside-container {
+        width: 70%;
+    }
+    .about-container__inside {
+        width: 75%;
+    }
+    .about-container__inside h2 {
+        font-size: 1.3rem;
+    }
+    .about-container__inside p {
+        font-size: 0.9rem;
+    }
+    .about-container__inside--link .btn {
+        width: 145px;
+    }
+    .promo-container__title {
+        width: 90% !important;
+    }
+    .inside-container .connect-link .btn {
+        width: 90px;
+    }
+    .box-container .box .box-content .overlay svg {
+        font-size: 2rem;
+    }
+    .box-container .box .box-content .overlay h3 {
+        font-size: 1.2rem;
+    }
+    .box-container .box .box-content .overlay p {
+        font-size: 1rem;
+    }
+    .box__content--overlay {
+        padding: 15px;
+    }
+    .box__content--overlay h3 {
+        font-size: 1.2rem;
+    }
+    .box__content--overlay p {
+        font-size: 1rem;
+    }
+    .promo-container .promo-title {
+        padding: 10px;
+    }
+    .promo-container__video video {
+        width: 80%;
+    }
+    .contact {
+        height: 25px;
+        padding-left: 2rem;
+    }
+    .contact {
+        height: 25px;
+        padding-left: 2rem;
+        font-size: 1.1rem;
+    }
+    .email-box {
+        padding: 10px;
+    }
+    .email-box #form-submit .submit-area {
+        width: 200px;
+    }
+    #form-submit .submit-area input {
+        width: 70%;
+        height: 25px;
+        font-size: 10px;
+        padding-left: 8px;
+    }
+    #form-submit .submit-area button { 
+        width: 50px;
+        font-size: 0.9rem;
+    }
+    #form-submit .submit-area .validate-icons {
+        position: absolute;
+        bottom: 7px;
+        left: 63%;
+    }
+    .info { 
+        height: 70px;
+    }
+    .copyright {
+        height: 30px;
+    }
+    .email-box h3 {
+        font-size: 1.3rem;
+    }
+    .form-group:first-child {
+        padding-top: 25px;
+    }
+    .form-group {
+        padding-right: 20px;
+    }
+    .form-group label {
+        width: 35%;
+    }
+    .form-group__line>input,
+    .form-group>textarea {
+        width: 65% !important;
+    }
+    .form-group>textarea {
+        margin-left: 0;
+        height: 40px;
+    }
+    .booking h2 {
+        padding: 0 1rem 1rem 1rem;
+    }
+    .booking-container__inside--form {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: auto;
+    }
+    #contactInfo, #contactInfo a {
+        font-size: 16px;
+    }
+    .submit-btn {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .home .content {
+        font-size: 1rem;
+    }
+    .box-container .box .box-content .overlay svg {
+        font-size: 2rem;
+    }
+    .box-container .box .box-content .overlay h3 {
+        font-size: 1.2rem;
+    }
+    .box-container .box .box-content .overlay p {
+        font-size: 1rem;
+    } 
+    .about-container {
+        padding: 20px 0;
+    }
+    .heading {
+        font-size: 18px;
+    }
+    .box__content--overlay h3 {
+        font-size: 1rem;
+    }
+    .box__content--overlay p {
+        font-size: 0.9rem;
+    }
+    .promo-container {
+        margin-top: 0px;
+    }
+    .promo-container .promo-title {
+        padding: 10px;
+    }
+    .email-box #form-submit input {
+        height: 20px;
+    }
+    .info { 
+        height: 60px;
+    }
+    .email-box h3 {
+        font-size: 1.1rem;
+    }
+    .booking-container__inside {
+        height: 450px;
+    }
+    .form-group label,
+    .form-group__line>input,
+    .form-group>textarea {
+        font-size: 9px;
+    }
+    .form-group__line>input {
+        height: 20px;
+    }
+    .form-group>textarea {
+        height: 35px;
+    }
+    .submit-btn {
+        width: 65px;
+        height: 25px;
+        font-size: 9px;
+    }
+}
+
